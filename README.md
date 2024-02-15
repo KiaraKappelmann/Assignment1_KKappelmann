@@ -1,4 +1,4 @@
-# Course Assignments
+# UNIX Assignment - Kiara Kappelmann
 
 A description of files within this folder:
 
@@ -15,9 +15,6 @@ Teosinte files:
 * 1 file with all SNPs with unknown positions in the genome : `teo_snp_unknown.txt`
 * 1 file with all SNPs with multiple positions in the genome: `teo_multi_snps.txt`
 
-
-
-# UNIX Assignment - Kiara Kappelmann
 
 ## Data Inspection
 
@@ -150,7 +147,7 @@ using [https://www.geeksforgeeks.org/looping-statements-shell-script/] as a refe
 
 this will loop through column 2 for which the value is equal to {1...10} and will then sort the lines based on column 3, and create files using the value in column 2
 and using the increasing files so they are in increasing order
-i
+
 ```
 for i in {1..10}; do awk '$2=='$i'' maize_increase.txt|sort -k3,3n > maize_chromosome"$i"_increase.txt; done
 for i in {1..10}; do awk '$2=='$i'' teo_increase.txt|sort -k3,3n > teo_chromosome"$i"_increase.txt; done
@@ -187,9 +184,6 @@ for i in {1..10}; do awk '$2=='$i'' maize_decrease_sed.txt > maize_chromosome"$i
 for i in {1..10}; do awk '$2=='$i'' teo_decrease_sed.txt > teo_chromosome"$i"_decrease.txt; done
 ```
 The output results in a total of 20 files: 10 for maize, 10 for teosinte
-
-
-
 
 
 
