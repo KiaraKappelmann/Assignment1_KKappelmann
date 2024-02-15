@@ -1,12 +1,17 @@
-## Course Assignments
+# Course Assignments
 
 A description of files within this folder:
-
-* `UNIX_Assignment.md` and `UNIX_Assignment.pdf`: Instructions for the assignment
-* `UNIX_Assignment_Template.md` and `UNIX_Assignment_Template.pdf`: An example of what your Markdown file should look like when you submit your assignment, including some Markdown syntax that should be helpful for you. The pdf shows how this file is rendered using a tool such as "MacDown"
-* The two files `fang_et_al_genotypes.txt` and `snp_positions.txt` are data files you will be reformatting for the assignment
-* The `transpose.awk` script will be needed to transpose the data (see instructions in `UNIX_Assignment.md`)
-
+Maize files:
+* 10 files (1 for each chromosome) with SNPs ordered based on increasing position and missing data encoded by "?" : `maize_chromosome(1..10)_increase.txt
+* 10 files (1 for each chromosome) with SNPs ordered based on decreasing position and with missing data encoded by "-" : `maize_chromosome(1..10)_ decrease.txt`
+* 1 file with all SNPs with unknown positions in the genome : `maize_snp_unknown.txt`
+* 1 file with all SNPs with multiple positions in the genome: `maize_multi_snps.txt
+Teosinte files:
+* 10 files (1 for each chromosome) with SNPs ordered based on increasing position and missing data encoded by "?" : `teo_chromosome(1..10)_ increase.txt`
+* 10 files (1 for each chromosome) with SNPs ordered based on decreasing position and with missing data encoded by "-"
+: `teo_chromosome(1..10)_ decrease.txt`
+* 1 file with all SNPs with unknown positions in the genome : `teo_snp_unknown.txt`
+* 1 file with all SNPs with multiple positions in the genome: `teo_multi_snps.txt
 
 
 
@@ -150,7 +155,7 @@ using [https://www.geeksforgeeks.org/looping-statements-shell-script/] as a refe
 
 this will loop through column 2 for which the value is equal to {1...10} and will then sort the lines based on column 3, and create files using the value in column 2
 and using the increasing files so they are in increasing order
-
+i
 ```
 for i in {1..10}; do awk '$2=='$i'' maize_increase.txt|sort -k3,3n > maize_chromosome"$i"_increase.txt; done
 for i in {1..10}; do awk '$2=='$i'' teo_increase.txt|sort -k3,3n > teo_chromosome"$i"_increase.txt; done
