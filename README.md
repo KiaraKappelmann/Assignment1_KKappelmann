@@ -31,14 +31,7 @@ here is my snippet of code used for data inspection
     head -n +1 fang_et_al_genotypes.txt
     cut -f3 fang_et_al_genotypes.txt |sort|uniq
 
-```
-here is my snipped of code used for data inspection after transpose.awk
-```
-    wc -l tranposed_genotypes.txt - there are 986 lines
-    awk -F "\t" '{print NF; exit}' transposed_genotypes.txt - there are 2786 columns
-    head -n +1 transposed_genotypes.txt - I can see now that there is a column for each genotype tested
 
-```
 By inspecting this file I learned that:
 
 * There are 2783 lines in this file
