@@ -131,12 +131,12 @@ join -1 1 -2 1 -t $'\t' sorted_snp.txt teo_sort.txt > teo_join.txt
 
 First, I need to order the SNPs based on position. I am going to create both `_increase.txt` and `_decrease.txt` files now. This helps with later steps and because I don't want files with multiple or unknown SNP positions
 ## 
-#`_increase.txt`
+`_increase.txt`
 ```
 grep -v "multiple" maize_join.txt |grep -v "unknown"| sort -k3,3n > maize_increase.txt 
 grep -v "multiple" teo_join.txt |grep -v "unknown"| sort -k3,3n > teo_increase.txt
 ```
-#`_decrease.txt`
+`_decrease.txt`
 ```
 grep -v "multiple" maize_join.txt |grep -v "unknown"| sort -k3,3nr > maize_decrease.txt
 grep -v "multiple" teo_join.txt |grep -v "unknown"| sort -k3,3nr > teo_decrease.txt
