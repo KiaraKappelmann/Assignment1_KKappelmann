@@ -29,7 +29,7 @@ here is my snippet of code used for data inspection
     tail -n +6 fang_et_al_genotypes.txt | awk -F "\t" '{print NF; exit}'
     head -n +1 fang_et_al_genotypes.txt
     cut -f3 fang_et_al_genotypes.txt |sort|uniq
-
+```
 
 By inspecting this file I learned that:
 
