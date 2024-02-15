@@ -11,11 +11,11 @@ Teosinte files:
 * 10 files (1 for each chromosome) with SNPs ordered based on decreasing position and with missing data encoded by "-"
 : `teo_chromosome(1..10)_ decrease.txt`
 * 1 file with all SNPs with unknown positions in the genome : `teo_snp_unknown.txt`
-* 1 file with all SNPs with multiple positions in the genome: `teo_multi_snps.txt
+* 1 file with all SNPs with multiple positions in the genome: `teo_multi_snps.txt`
 
 
 
-[O# UNIX Assignment - Kiara Kappelmann
+# UNIX Assignment - Kiara Kappelmann
 
 ## Data Inspection
 
