@@ -1,11 +1,13 @@
 # Course Assignments
 
 A description of files within this folder:
+
 Maize files:
 * 10 files (1 for each chromosome) with SNPs ordered based on increasing position and missing data encoded by "?" : `maize_chromosome(1..10)_increase.txt
 * 10 files (1 for each chromosome) with SNPs ordered based on decreasing position and with missing data encoded by "-" : `maize_chromosome(1..10)_ decrease.txt`
 * 1 file with all SNPs with unknown positions in the genome : `maize_snp_unknown.txt`
 * 1 file with all SNPs with multiple positions in the genome: `maize_multi_snps.txt
+
 Teosinte files:
 * 10 files (1 for each chromosome) with SNPs ordered based on increasing position and missing data encoded by "?" : `teo_chromosome(1..10)_ increase.txt`
 * 10 files (1 for each chromosome) with SNPs ordered based on decreasing position and with missing data encoded by "-"
@@ -185,6 +187,7 @@ for i in {1..10}; do awk '$2=='$i'' maize_decrease_sed.txt > maize_chromosome"$i
 for i in {1..10}; do awk '$2=='$i'' teo_decrease_sed.txt > teo_chromosome"$i"_decrease.txt; done
 ```
 The output results in a total of 20 files: 10 for maize, 10 for teosinte
+
 
 
 
